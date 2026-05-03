@@ -23,3 +23,5 @@ CLI tool for running Cursor SDK agents programmatically. Single-package TypeScri
 - The actual application code lives on the `cursor/agentflow-cursor-sdk-5f5b` branch. The `main` branch contains only the initial README.
 - Dev mode uses `tsx` for direct TypeScript execution without a build step: `npm run dev -- run "prompt"`.
 - Built mode compiles to `dist/` first via `npm run build`, then runs with `npm start -- run "prompt"`.
+- The streaming output in the terminal interleaves streamed text tokens with `[tool ...]` and `[status]` lines. This is expected behavior, not an error.
+- To verify the full CLI works end-to-end, run: `npm run dev -- models` (lists models) and `npm run dev -- run "List files"` (runs a local agent).
