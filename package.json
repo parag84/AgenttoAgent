@@ -1,0 +1,33 @@
+{
+  "name": "agentflow",
+  "version": "0.1.0",
+  "description": "CLI to run Cursor SDK agents (local or cloud) with streaming output",
+  "type": "module",
+  "bin": {
+    "agentflow": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "cursor",
+    "agent",
+    "sdk",
+    "automation"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@cursor/sdk": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.3"
+  }
+}
